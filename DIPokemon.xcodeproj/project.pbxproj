@@ -22,6 +22,8 @@
 		1D1A735D2A5A5A1400132BC3 /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A735C2A5A5A1400132BC3 /* PokemonRepository.swift */; };
 		1D1A735F2A5A5B4100132BC3 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A735E2A5A5B4100132BC3 /* ApiRequest.swift */; };
 		1D1A73612A5A731100132BC3 /* PokemonRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73602A5A731100132BC3 /* PokemonRepositoryMock.swift */; };
+		1D1A73632A5A7AE400132BC3 /* PokemonImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73622A5A7AE400132BC3 /* PokemonImageDownloader.swift */; };
+		1D1A73662A5A7B2600132BC3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1D1A73652A5A7B2600132BC3 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		1D1A735C2A5A5A1400132BC3 /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
 		1D1A735E2A5A5B4100132BC3 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		1D1A73602A5A731100132BC3 /* PokemonRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepositoryMock.swift; sourceTree = "<group>"; };
+		1D1A73622A5A7AE400132BC3 /* PokemonImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 			files = (
 				1D1A73502A5A41E900132BC3 /* SwiftyJSON in Frameworks */,
 				1D1A73532A5A41F600132BC3 /* SwiftyDI in Frameworks */,
+				1D1A73662A5A7B2600132BC3 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +80,7 @@
 			children = (
 				1D1A73392A5A3FF500132BC3 /* AppDelegate.swift */,
 				1D1A733B2A5A3FF500132BC3 /* SceneDelegate.swift */,
+				1D1A73622A5A7AE400132BC3 /* PokemonImageDownloader.swift */,
 				1D1A73582A5A529200132BC3 /* Pokemon.swift */,
 				1D1A735E2A5A5B4100132BC3 /* ApiRequest.swift */,
 				1D1A735A2A5A5A0900132BC3 /* PokemonUsecase.swift */,
@@ -112,6 +117,7 @@
 			packageProductDependencies = (
 				1D1A734F2A5A41E900132BC3 /* SwiftyJSON */,
 				1D1A73522A5A41F600132BC3 /* SwiftyDI */,
+				1D1A73652A5A7B2600132BC3 /* AlamofireImage */,
 			);
 			productName = DIPokemon;
 			productReference = 1D1A73362A5A3FF500132BC3 /* DIPokemon.app */;
@@ -144,6 +150,7 @@
 			packageReferences = (
 				1D1A734E2A5A41E900132BC3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				1D1A73512A5A41F600132BC3 /* XCRemoteSwiftPackageReference "SwiftyDI" */,
+				1D1A73642A5A7B2600132BC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 1D1A73372A5A3FF500132BC3 /* Products */;
 			projectDirPath = "";
@@ -199,6 +206,7 @@
 				1D1A733E2A5A3FF500132BC3 /* ViewController.swift in Sources */,
 				1D1A73562A5A466000132BC3 /* PokemonTableViewCell.swift in Sources */,
 				1D1A733A2A5A3FF500132BC3 /* AppDelegate.swift in Sources */,
+				1D1A73632A5A7AE400132BC3 /* PokemonImageDownloader.swift in Sources */,
 				1D1A733C2A5A3FF500132BC3 /* SceneDelegate.swift in Sources */,
 				1D1A735F2A5A5B4100132BC3 /* ApiRequest.swift in Sources */,
 				1D1A735B2A5A5A0900132BC3 /* PokemonUsecase.swift in Sources */,
@@ -445,6 +453,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		1D1A73642A5A7B2600132BC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -457,6 +473,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1D1A73512A5A41F600132BC3 /* XCRemoteSwiftPackageReference "SwiftyDI" */;
 			productName = SwiftyDI;
+		};
+		1D1A73652A5A7B2600132BC3 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D1A73642A5A7B2600132BC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

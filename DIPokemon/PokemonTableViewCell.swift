@@ -18,6 +18,8 @@ class PokemonTableViewCell: UITableViewCell {
     private lazy var attributelabels = [attribute1Label,
                                         attribute2Label]
     
+    let imageDownloader = PokemonImageDownloader.shard
+    
     var pokemon: Pokemon? {
         didSet {
             guard let pokemon else {
@@ -46,6 +48,8 @@ class PokemonTableViewCell: UITableViewCell {
             attributelabels[offset]?.text = element.title
             attributelabels[offset]?.textColor = element.color
         }
-        
+        imageDownloader.download(urlString: pokemon.imageUrl, completionHandler: { [weak self] image in
+            self?.pokemonImageView.image = image
+        })
     }
 }
