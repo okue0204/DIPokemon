@@ -33,6 +33,9 @@
                                         <state key="normal" title="ゲットする">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="getButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUr-Ho-zzW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +53,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.44705882349999998" green="0.75686274509999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eNH-hQ-m8Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Wz-9o-Uhi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g9B-ea-yPc" secondAttribute="bottom" id="2Ym-8y-Thy"/>
