@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PokemonRepositoryMock:PokemonRepository {
+class PokemonRepositoryMock: PokemonRepository {
     func pokemonInfo() async -> Result<Pokemon, ApiError> {
         return .success(Self.pokemonInfo)
     }
@@ -21,4 +21,3 @@ extension PokemonRepositoryMock {
                        attributes: [.electric])
     }
 }
-
