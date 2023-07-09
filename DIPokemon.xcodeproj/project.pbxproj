@@ -15,6 +15,8 @@
 		1D1A73462A5A3FF600132BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A73442A5A3FF600132BC3 /* LaunchScreen.storyboard */; };
 		1D1A73502A5A41E900132BC3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1D1A734F2A5A41E900132BC3 /* SwiftyJSON */; };
 		1D1A73532A5A41F600132BC3 /* SwiftyDI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D1A73522A5A41F600132BC3 /* SwiftyDI */; };
+		1D1A73562A5A466000132BC3 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73542A5A466000132BC3 /* PokemonTableViewCell.swift */; };
+		1D1A73572A5A466000132BC3 /* PokemonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A73552A5A466000132BC3 /* PokemonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1D1A73422A5A3FF600132BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D1A73452A5A3FF600132BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D1A73472A5A3FF600132BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D1A73542A5A466000132BC3 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		1D1A73552A5A466000132BC3 /* PokemonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				1D1A73392A5A3FF500132BC3 /* AppDelegate.swift */,
 				1D1A733B2A5A3FF500132BC3 /* SceneDelegate.swift */,
+				1D1A73542A5A466000132BC3 /* PokemonTableViewCell.swift */,
+				1D1A73552A5A466000132BC3 /* PokemonTableViewCell.xib */,
 				1D1A733D2A5A3FF500132BC3 /* ViewController.swift */,
 				1D1A733F2A5A3FF500132BC3 /* Main.storyboard */,
 				1D1A73422A5A3FF600132BC3 /* Assets.xcassets */,
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1A73462A5A3FF600132BC3 /* LaunchScreen.storyboard in Resources */,
+				1D1A73572A5A466000132BC3 /* PokemonTableViewCell.xib in Resources */,
 				1D1A73432A5A3FF600132BC3 /* Assets.xcassets in Resources */,
 				1D1A73412A5A3FF500132BC3 /* Main.storyboard in Resources */,
 			);
@@ -172,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1A733E2A5A3FF500132BC3 /* ViewController.swift in Sources */,
+				1D1A73562A5A466000132BC3 /* PokemonTableViewCell.swift in Sources */,
 				1D1A733A2A5A3FF500132BC3 /* AppDelegate.swift in Sources */,
 				1D1A733C2A5A3FF500132BC3 /* SceneDelegate.swift in Sources */,
 			);
