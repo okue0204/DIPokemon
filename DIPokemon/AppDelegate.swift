@@ -6,15 +6,42 @@
 //
 
 import UIKit
+import SwiftyDI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    static let isMockDataEnabled = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if Self.isMockDataEnabled {
+            configureDependencyForMock()
+        } else {
+            configureDependency()
+        }
         return true
+    }
+    
+    private func configureDependencyForMock() {
+        DIContainer {
+            // usecase
+            Dependency { PokemonUsecaseImpl() }
+            
+            // Repository
+            Dependency { PokemonRepositoryMock() }
+        }.build()
+    }
+    
+    private func configureDependency() {
+        DIContainer {
+            // Usecase
+            Dependency { PokemonUsecaseImpl() }
+            
+            // Repository
+            Dependency { PokemonRepositoryImpl() }
+        }.build()
     }
 
     // MARK: UISceneSession Lifecycle

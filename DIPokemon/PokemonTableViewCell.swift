@@ -18,6 +18,15 @@ class PokemonTableViewCell: UITableViewCell {
     private lazy var attributelabels = [attribute1Label,
                                         attribute2Label]
     
+    var pokemon: Pokemon? {
+        didSet {
+            guard let pokemon else {
+                return
+            }
+            configure(pokemon: pokemon)
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,4 +38,14 @@ class PokemonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    private func configure(pokemon: Pokemon) {
+        idLabel.text = String(pokemon.id)
+        nameLabel.text = pokemon.name
+        attribute2Label.isHidden = pokemon.attributes.count == 1
+        pokemon.attributes.enumerated().forEach { offset, element in
+            attributelabels[offset]?.text = element.title
+            attributelabels[offset]?.textColor = element.color
+        }
+        
+    }
 }
